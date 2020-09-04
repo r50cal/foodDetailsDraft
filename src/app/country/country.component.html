@@ -1,0 +1,18 @@
+<h1>Foods by Country</h1>
+<div class="center">
+    <div class="gallery" *ngFor="let country of countries">
+      
+        <div>{{country.name}}</div>
+        <a (click)="countrySelect(country.name)" routerLink="foodDetails">
+        <img [src]="country.img" width="300" height="200">
+    </a> 
+     <div *ngIf = "isLoaded">
+         <app-food-detail-page [countrySelected]="countrySelected"></app-food-detail-page>
+     </div>
+   
+    </div>
+    
+  
+</div>
+
+
