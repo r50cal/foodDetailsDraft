@@ -3,15 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FoodDetailPageComponent } from './food-detail-page/food-detail-page.component';
 import { CountryComponent } from './country/country.component';
 import {FoodServiceService} from '../app/food-service.service';
+import { ChineseFoodComponent } from './chinese-food/chinese-food.component';
+import { ThaiFoodComponent } from './thai-food/thai-food.component';
+import { DominicanFoodComponent } from './dominican-food/dominican-food.component';
+import { FilipinoFoodComponent } from './filipino-food/filipino-food.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FoodDetailPageComponent,
-    CountryComponent
+    CountryComponent,
+    ChineseFoodComponent,
+    ThaiFoodComponent,
+    DominicanFoodComponent,
+    FilipinoFoodComponent
   ],
   imports: [
     BrowserModule,
